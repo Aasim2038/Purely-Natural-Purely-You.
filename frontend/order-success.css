@@ -1,0 +1,20 @@
+/* === SUCCESS PAGE STYLING === */
+.success-container {
+    text-align: center;
+    background: #fff;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+.success-icon {
+    font-size: 4rem;
+    color: var(--green);
+    margin-bottom: 1rem;
+}
+.success-container p {
+    color: var(--muted);
+    line-height: 1.6;
+}
+.success-container a {
+    margin-top: 1.5rem;
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Puroable</title>
+    <link rel="stylesheet" href="style.css"> <style>
+        /* Yeh styles sirf About Us page ke liye hain */
+        .about-hero {
+            padding: 4rem 2rem;
+            text-align: center;
+            background-color: #dfeee6; /* Light green accent color */
+            color: #23323f;
+        }
+        .about-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .about-hero p {
+            font-size: 1.2rem;
+            color: #6b7280;
+        }
+        .about-section {
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 2rem;
+        }
+        .our-story {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        .our-story-image {
+            flex-basis: 40%;
+        }
+        .our-story-image img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        .our-story-content {
+            flex-basis: 60%;
+        }
+        .our-promise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .promise-card {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .promise-card svg {
+            width: 48px;
+            height: 48px;
+            color: #2e8b57; /* Green color */
+            margin-bottom: 1rem;
+        }
+        .promise-card h3 {
+            margin-bottom: 0.5rem;
+        }
+        .cta-section {
+            text-align: center;
+            background-color: #fff;
+            padding: 3rem 2rem;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 12px 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #fff;
+            background-color: #2e8b57;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #216a42;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .our-story {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="brand">
+        <a href="index.html" class="logo">
+            <img src="assets/img/logo.png" alt="Purevia Logo" style="width:100%;height:100%;object-fit:contain;border-radius:8px" />
+        </a>
+        <div>
+            <h1><a href="index.html">Puroable</a></h1>
+            <p>Purely Natural, Purely You.</p>
+        </div>
+    </div>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="header-actions">
+        <a href="cart.html" class="cart-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c.51 0 .962-.343 1.087-.835l1.823-6.811a1.5 1.5 0 00-1.423-2.102H5.828M9 18.75a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zM19.5 18.75a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+            </svg>
+            <span id="cart-count">0</span>
+        </a>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+
+    <main>
+        <section class="about-hero">
+            <h1>About Puroable website</h1>
+            <p>Purely Whole, Perfectly You.</p>
+        </section>
+
+        <section class="about-section our-story">
+            <div class="our-story-image">
+                <img src="assets/img/aboutus-img.png" alt="Natural Ingredients">
+            </div>
+            <div class="our-story-content">
+                <h2>Our Story</h2>
+                <p>At Puroable, we believe that true beauty and wellness are found in the heart of nature. Our mission is to bring you products that are 100% pure, natural, and chemical-free, so you can live a healthy and confident life.</p>
+                <p>Our journey began with a simple idea: to create skincare and wellness products that we would confidently use for our own families. Moving away from the chemical-laden products common in the market, we blended traditional wisdom with modern science to develop formulations that are both effective and completely safe.</p>
+            </div>
+        </section>
+
+        <section class="about-section our-promise">
+            <h2 style="text-align:center;">Our Promise</h2>
+            <div class="promise-grid">
+                <div class="promise-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" /></svg>
+                    <h3>Pure Ingredients</h3>
+                    <p>We use only the finest quality, natural ingredients, sourced directly from nature.</p>
+                </div>
+                <div class="promise-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M5.25 8.25h13.5m-13.5 7.5h13.5m-1.34 2.813a3.75 3.75 0 100-5.626l-10.362-6.52c-.31-.195-.698-.24-1.082-.128a3.738 3.738 0 00-2.84 3.794v.193c0 1.44.832 2.748 2.072 3.393l10.363 6.52a3.75 3.75 0 001.688.4z" /></svg>
+                    <h3>Cruelty-Free</h3>
+                    <p>None of our products are ever tested on animals. We respect every living being.</p>
+                </div>
+                <div class="promise-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    <h3>Honesty & Transparency</h3>
+                    <p>The ingredients of every product are listed clearly, so you always know what's on your skin.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Join our journey of natural wellness.</h2>
+            <a href="index.html" class="cta-button">Explore Products</a>
+        </section>
+    </main>
+
+    <footer>
+        </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

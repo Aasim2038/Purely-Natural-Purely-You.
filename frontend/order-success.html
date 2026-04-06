@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Successful - Puroable</title>
+    <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="order-success.css">
+</head>
+<body>
+    <header>
+        </header>
+
+    <div class="container success-container">
+        <div class="success-icon">✔️</div>
+        <h1>Thank You for Your Order!</h1>
+        <p>Your order has been placed successfully. Your Order ID is <strong id="orderId">...</strong>.</p>
+        <p>We will contact you shortly on WhatsApp for payment and shipping details.</p>
+        <a href="index.html" class="btn-primary">Continue Shopping</a>
+    </div>
+
+    <footer>
+        </footer>
+
+    <script>
+        // URL se Order ID nikalkar page par dikhayein
+        const params = new URLSearchParams(window.location.search);
+        const orderId = params.get('orderId');
+        if (orderId) {
+            document.getElementById('orderId').textContent = orderId;
+        }
+    </script>
+</body>
+</html>

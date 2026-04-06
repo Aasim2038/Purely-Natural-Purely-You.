@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Orders - Admin Panel</title>
+    <link rel="stylesheet" href="admin.css"> <link rel="stylesheet" href="orders.css"> </head>
+<body>
+    <h1 style="text-align:center;">Admin Panel</h1>
+    
+    <div class="admin-nav container">
+        <a href="admin.html">Manage Products</a>
+        <a href="orders.html" class="active">View Orders</a>
+    </div>
+
+    <div class="container">
+        <h2>Customer Orders</h2>
+        <div class="table-container">
+            <table id="ordersTable">
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Date</th>
+                        <th>Customer Details</th>
+                        <th>Items</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="ordersTableBody">
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="orders.js"></script>
+</body>
+</html>

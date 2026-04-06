@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="admin.css"> </head>
+<body>
+    <div id="loginOverlay" class="overlay">
+    <div class="modal">
+      <h2>Admin Login</h2>
+      <p>Please enter your password to continue.</p>
+      <form id="loginForm">
+        <input type="password" id="passwordInput" placeholder="Password" required>
+        <button type="submit" class="btn-primary">Login</button>
+      </form>
+    </div>
+  </div>
+  <div id="toastContainer"></div>
+  <h1 style="text-align:center;">Admin Panel</h1>
+  <div class="admin-nav container">
+    <a href="admin.html" class="active">Manage Products</a>
+    <a href="orders.html">View Orders</a>
+</div>
+  
+  <div class="container">
+    <h2>Add Product</h2>
+    <form id="productForm" autocomplete="off">
+      <input type="text" name="name" placeholder="Product Name" required>
+      <input type="text" name="desc" placeholder="Description">
+      <input type="number" name="price" placeholder="Price" required>
+      <select name="category" required>
+        <option value="">-- Select Category --</option>
+        <option value="Face Care">Face Care</option>
+        <option value="Body Care">Body Care</option>
+        <option value="Hair Care">Hair Care</option>
+        <option value="Hair Care">Oral Care</option>
+        <option value="Health">Health</option>
+        <option value="Nutrition">Nutrition</option>
+        <option value="Spices">Organic Spices</option>
+      </select>
+      <input type="file" name="img" accept="image/*" required>
+      <button type="submit" class="btn-primary">Add Product</button>
+    </form>
+
+    <h2>All Products</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Category</th> <th>Image</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="productTable"></tbody>
+    </table>
+  </div>
+
+<div id="editModalOverlay" class="overlay">
+    <div class="modal">
+        <span id="closeEditModal" class="close-btn">&times;</span>
+        <h2>Edit Product</h2>
+        <form id="editForm" autocomplete="off">
+            <input type="hidden" id="editProductId" name="id">
+            <label for="editName">Product Name:</label>
+            <input type="text" id="editName" name="name" required>
+            <label for="editDesc">Description:</label>
+            <input type="text" id="editDesc" name="desc">
+            <label for="editPrice">Price:</label>
+            <input type="number" id="editPrice" name="price" required>
+            <label for="editCategory">Category:</label>
+            <select id="editCategory" name="category" required>
+                <option value="">-- Select Category --</option>
+                <option value="Face Care">Face Care</option>
+                <option value="Body Care">Body Care</option>
+                <option value="Hair Care">Hair Care</option>
+                <option value="Oral Care">Oral Care</option>
+                <option value="Health">Health</option>
+                <option value="Nutrition">Nutrition</option>
+                <option value="Spices">Organic Spices</option>
+            </select>
+            <label for="editImgFile">Change Image (Optional):</label>
+            <input type="file" id="editImgFile" name="img" accept="image/*">
+            <div class="modal-actions">
+                <button type="submit" class="btn-primary">Save Changes</button>
+                <button type="button" id="cancelEdit" class="btn-secondary">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

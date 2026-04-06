@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Puroable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        </header>
+
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 2rem;">Checkout</h2>
+
+        <div class="checkout-layout">
+            <div class="customer-form">
+                <h3>Shipping Details</h3>
+                <form id="checkoutForm">
+                    <div class="form-group">
+                        <label for="customerName">Full Name</label>
+                        <input type="text" id="customerName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerPhone">Phone Number</label>
+                        <input type="tel" id="customerPhone" required>
+                    </div>
+                    <div class="form-group">
+    <label for="customerAddress">Full Address</label>
+    <button type="button" id="getLocationBtn" class="location-btn">📍 Use My Current Location</button>
+    <textarea id="customerAddress" rows="4" required placeholder="Or enter your address manually..."></textarea>
+</div>
+                    <input type="hidden" id="customerLat">
+    <input type="hidden" id="customerLon">
+                    <button type="submit" class="btn-primary">Place Order</button>
+                </form>
+            </div>
+
+            <div class="order-summary">
+                <h3>Your Order</h3>
+                <div id="summary-items">
+                    </div>
+                <div class="summary-total">
+                    <strong>Total:</strong>
+                    <span id="summary-total-value">₹0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        </footer>
+    
+    <script src="checkout.js"></script> </body>
+</html>

@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "charcoal-face-wash",
+    "desc": "100% chemical-free. Gentle moisturizing soap with aloe extract.",
+    "price": "₹250",
+    "img": "/uploads/charcoal-face-wash.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Multani-Mitti-soap",
+    "desc": "Natural brightening cream with turmeric & neem.",
+    "price": "₹70",
+    "img": "/uploads/Multani-Mitti-soap.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Natureroot-toothpaste",
+    "desc": "Natural brightening cream with turmeric & neem.",
+    "price": "120",
+    "img": "/uploads/Natureroot-toothpaste.jpg"
+  }
+]
