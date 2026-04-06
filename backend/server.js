@@ -13,8 +13,9 @@ const app = express();
 const whitelist = [
   'https://softstich.com', 
   'https://www.softstich.com', 
-  'http://127.0.0.1:3000', // Yeh zaroori hai local testing ke liye
-  'http://localhost:3000'
+  'http://127.0.0.1:3000',
+  'http://localhost:3000',
+  'https://orchid-cod-403554.hostingersite.com' // Yeh naya domain yahan add karein ✅
 ];
 
 const corsOptions = {
